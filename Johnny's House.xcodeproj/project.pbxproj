@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		2C401BF526439FBE000D67EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C401BF426439FBE000D67EC /* AppDelegate.swift */; };
 		2C401BF726439FBE000D67EC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C401BF626439FBE000D67EC /* SceneDelegate.swift */; };
-		2C401BF926439FBE000D67EC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C401BF826439FBE000D67EC /* ViewController.swift */; };
+		2C401BF926439FBE000D67EC /* PickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C401BF826439FBE000D67EC /* PickerViewController.swift */; };
 		2C401BFC26439FBE000D67EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C401BFA26439FBE000D67EC /* Main.storyboard */; };
 		2C401BFE26439FBF000D67EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C401BFD26439FBF000D67EC /* Assets.xcassets */; };
 		2C401C0126439FBF000D67EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C401BFF26439FBF000D67EC /* LaunchScreen.storyboard */; };
+		2C401C0E2643C835000D67EC /* PickerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C401C0D2643C835000D67EC /* PickerData.swift */; };
+		2C401C102644D29F000D67EC /* ColorRandomizerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C401C0F2644D29F000D67EC /* ColorRandomizerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2C401BF126439FBE000D67EC /* Johnny's House.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Johnny's House.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C401BF426439FBE000D67EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2C401BF626439FBE000D67EC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2C401BF826439FBE000D67EC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2C401BF826439FBE000D67EC /* PickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerViewController.swift; sourceTree = "<group>"; };
 		2C401BFB26439FBE000D67EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2C401BFD26439FBF000D67EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2C401C0026439FBF000D67EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2C401C0226439FBF000D67EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C401C0D2643C835000D67EC /* PickerData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerData.swift; sourceTree = "<group>"; };
+		2C401C0F2644D29F000D67EC /* ColorRandomizerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorRandomizerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +62,39 @@
 			children = (
 				2C401BF426439FBE000D67EC /* AppDelegate.swift */,
 				2C401BF626439FBE000D67EC /* SceneDelegate.swift */,
-				2C401BF826439FBE000D67EC /* ViewController.swift */,
-				2C401BFA26439FBE000D67EC /* Main.storyboard */,
+				2C401C082643C7A5000D67EC /* Model */,
+				2C401C092643C7AB000D67EC /* View */,
+				2C401C0A2643C7B2000D67EC /* Controller */,
 				2C401BFD26439FBF000D67EC /* Assets.xcassets */,
 				2C401BFF26439FBF000D67EC /* LaunchScreen.storyboard */,
 				2C401C0226439FBF000D67EC /* Info.plist */,
 			);
 			path = "Johnny's House";
+			sourceTree = "<group>";
+		};
+		2C401C082643C7A5000D67EC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2C401C0D2643C835000D67EC /* PickerData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2C401C092643C7AB000D67EC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2C401BFA26439FBE000D67EC /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2C401C0A2643C7B2000D67EC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2C401BF826439FBE000D67EC /* PickerViewController.swift */,
+				2C401C0F2644D29F000D67EC /* ColorRandomizerViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,9 +167,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C401BF926439FBE000D67EC /* ViewController.swift in Sources */,
+				2C401BF926439FBE000D67EC /* PickerViewController.swift in Sources */,
 				2C401BF526439FBE000D67EC /* AppDelegate.swift in Sources */,
+				2C401C0E2643C835000D67EC /* PickerData.swift in Sources */,
 				2C401BF726439FBE000D67EC /* SceneDelegate.swift in Sources */,
+				2C401C102644D29F000D67EC /* ColorRandomizerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
